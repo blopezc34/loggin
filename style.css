@@ -1,0 +1,107 @@
+/* Configuración General */
+body {
+    background-color: #7a8a99; /* Fondo gris azulado profesional */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta Principal */
+.main-container {
+    background-color: #e0e0e0; /* Color gris claro de la interfaz */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 2000px;
+    text-align: center;
+}
+
+/* Encabezado y Logo */
+.header-info b {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+/* Alineación de Inputs (GRID es la clave) */
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 240px; /* Tamaño fijo para etiquetas e inputs */
+    justify-content: center; /* Centra el bloque completo */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    text-align: right; /* Etiquetas pegadas al cuadro */
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+.form-row input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Estética de Elementos */
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 25px 0;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Botón Profesional */
+.btn-main {
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+    border: 1px solid #999;
+    padding: 10px 30px;
+    border-radius: 20px; /* Forma ovalada profesional */
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 240px; /* Misma anchura que los inputs */
+    margin-left: 120px; /* Alineado con el inicio de los inputs */
+}
+
+.btn-main:hover {
+    background: #d4d4d4;
+    border-color: #777;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
